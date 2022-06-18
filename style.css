@@ -1,0 +1,188 @@
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+}
+body{
+    background-image:url('images/bg-intro-desktop.png');
+    background-size: cover;
+    background-color:hsl(0, 100%, 74%) ;
+    background-repeat: no-repeat;
+}
+main{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    width:80%;
+    margin: auto;
+}
+.headings{
+    color: white;
+    width: 100%;
+    padding: 16rem 2rem;
+    height: 400px;
+    display: block;
+}
+.headings h2{
+    font-family:'poppins' ;
+    font-size: 48px;
+    font-weight: 700;
+    text-align: left;
+}
+.learn-paragraph{
+    font-family:'poppins';
+    font-size: 15px;
+    font-weight: 400;
+    text-align: left;
+}
+.learn-paragraph2{
+    font-family:'poppins';
+    font-size: 16px;
+    font-weight: 400;
+    text-align: left;
+}
+.headings-form{
+    width: 100%;
+    padding: 4rem 2rem;
+    height: 400px;
+    display:block;
+}
+.form-banner{
+    margin: 0.5rem 0;
+    padding:0.75rem;
+    text-align: center;
+    border: none;
+    border-radius: 10px;
+    background-color:hsl(248, 32%, 49%); 
+    width:100%;
+    color:white;
+}
+.form-banner button{
+    font-family: 'poppins';
+    font-size: 16px;
+    font-weight: 500;
+    padding:8px;
+    box-shadow: 0 7px 0 #c6c5da;
+}
+.form-class{
+    height: 450px;
+    width: 100%;
+    padding: 2rem;
+    background-color: rgb(255, 253, 253);
+    border-radius: 5px;
+}
+input{
+    width:100%;
+    border-radius: 4px;
+    margin:0.75rem;
+    padding:0.5rem;
+    border:1px solid grey;
+}
+.requirements{
+    display: none;
+}
+input:focus{
+    outline: 0;
+    background-color: white;
+    border:1px solid grey;
+}
+input:valid{
+    border:1px solid grey;
+}
+
+input:required:valid+P{
+    display:none;
+}
+input:valid{
+    outline:none;
+    border:1px solid hsl(154, 59%, 51%);
+}
+
+input:required:invalid{
+    background-image: url('https://cdn0.iconfinder.com/data/icons/shift-interfaces/32/Error-512.png');
+    background-size: 14px;
+    background-repeat: no-repeat;
+    outline: none;
+    border: 1px solid hsl(0, 100%, 74%);
+    background-position: right;
+    background-origin: content-box;
+}
+input:required:invalid+p{
+    display:inline;
+    color: hsl(0, 100%, 74%);
+    font-size: 14px;
+    font-style: italic;
+    float:right;
+    font-family: 'poppins';
+}
+.btn-claim{
+    background-color:hsl(154, 59%, 51%);
+    text-align: center;
+    color: white;
+    font-family: 'poppins';
+    font-size: 16px;
+    font-weight: 400px;
+    border: none;
+    border-radius: 4px;
+    width:100%;
+    margin:0.75rem;
+    padding:0.5rem;
+    cursor: pointer;
+}
+.btn-claim a{
+    text-decoration: none;
+    color:white;
+}
+.form-class P{
+    text-align: center;
+    font-size: 8px;
+    font-weight: 200px;
+    font-family: 'poppins';
+}
+strong{
+    color:hsl(0, 100%, 74%);
+}
+
+
+@media only screen and (min-width:375px)and (max-width:992px){
+    body{
+        background-image:url('images/bg-intro-mobile.png');
+    }
+    main{
+        display: block;
+        margin: auto;
+
+    }
+    .headings{
+        padding: 1rem 0.5rem;
+        text-align: center;
+        height:300px;
+    }
+    .headings h2{
+        font-size:24px;
+        padding:2rem;
+    }
+    .heading p{
+        font-size:15px;
+        padding:1.5rem;
+        display: inline-block;
+        text-align:center;
+        white-space: nowrap;
+    }
+    .headings-form{
+        padding: 1rem 0.5rem;
+        height:300px;
+    }
+    .form-banner{
+        padding:1rem;
+        text-align: center;
+        font-size:18px;
+    }
+    .form-class{
+        height: 450px;
+    }    
+    .form-class p{
+        font-size: 10px;
+    }
+}
